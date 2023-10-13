@@ -45,8 +45,8 @@ def generate_launch_description():
     robot_desc_path = os.path.join(get_package_share_directory(
         "barista_robot_description"), "xacro", robot_desc_file)
 
-    robot_name_1 = "robot1"
-    robot_name_2 = "robot2"
+    robot_name_1 = "rick"
+    robot_name_2 = "morty"
 
     rsp_robot1 = Node(
         package='robot_state_publisher',
@@ -93,11 +93,31 @@ def generate_launch_description():
             parameters=[{'use_sim_time': True}],
             arguments=['-d', rviz_config_dir])
 
+    b1_static_tf_pub = Node(
+        package='tf2_ros',
+        executable='static_transform_publisher',
+        name='static_transform_publisher_barista_B1_odom',
+        output='screen',
+        emulate_tty=True,
+        arguments=['0', '0', '0', '0', '0', '0', 'world', 'rick/odom']
+    )
+
+    b2_static_tf_pub = Node(
+        package='tf2_ros',
+        executable='static_transform_publisher',
+        name='static_transform_publisher_barista_B2_odom',
+        output='screen',
+        emulate_tty=True,
+        arguments=['0', '0', '0', '0', '0', '0', 'world', 'morty/odom']
+    )
+
     return LaunchDescription([
         gazebo,
         rsp_robot1,
         rsp_robot2,
         spawn_robot1,
         spawn_robot2,
+        b1_static_tf_pub,
+        b2_static_tf_pub,
         rviz_node
     ])
