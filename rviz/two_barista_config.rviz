@@ -6,7 +6,6 @@ Panels:
       Expanded:
         - /Global Options1
         - /Barista_B11/Description Topic1
-        - /TF_B11/Frames1
         - /Barista_B21/Description Topic1
         - /TF_B21/Frames1
         - /TF1/Frames1
@@ -156,24 +155,154 @@ Visualization Manager:
         Inertia: false
         Mass: false
       Name: Barista_B1
-      TF Prefix: ""
+      TF Prefix: /robot1
       Update Interval: 0
       Value: true
       Visual Enabled: true
     - Class: rviz_default_plugins/TF
-      Enabled: false
+      Enabled: true
       Frame Timeout: 15
       Frames:
         All Enabled: false
+        robot1/back_pitch_link:
+          Value: true
+        robot1/back_roll_link:
+          Value: true
+        robot1/back_yaw_link:
+          Value: true
+        robot1/base_link:
+          Value: true
+        robot1/chassis:
+          Value: true
+        robot1/cup_holder_tray:
+          Value: true
+        robot1/front_pitch_link:
+          Value: true
+        robot1/front_roll_link:
+          Value: true
+        robot1/front_yaw_link:
+          Value: true
+        robot1/laser_scan_frame:
+          Value: true
+        robot1/laser_scan_link:
+          Value: true
+        robot1/left_wheel:
+          Value: true
+        robot1/odom:
+          Value: true
+        robot1/right_wheel:
+          Value: true
+        robot1/standoff_rod_left_front:
+          Value: true
+        robot1/standoff_rod_left_rear:
+          Value: true
+        robot1/standoff_rod_right_front:
+          Value: true
+        robot1/standoff_rod_right_rear:
+          Value: true
+        robot2/back_pitch_link:
+          Value: true
+        robot2/back_roll_link:
+          Value: true
+        robot2/back_yaw_link:
+          Value: true
+        robot2/base_link:
+          Value: true
+        robot2/chassis:
+          Value: true
+        robot2/cup_holder_tray:
+          Value: true
+        robot2/front_pitch_link:
+          Value: true
+        robot2/front_roll_link:
+          Value: true
+        robot2/front_yaw_link:
+          Value: true
+        robot2/laser_scan_frame:
+          Value: true
+        robot2/laser_scan_link:
+          Value: true
+        robot2/left_wheel:
+          Value: true
+        robot2/odom:
+          Value: true
+        robot2/right_wheel:
+          Value: true
+        robot2/standoff_rod_left_front:
+          Value: true
+        robot2/standoff_rod_left_rear:
+          Value: true
+        robot2/standoff_rod_right_front:
+          Value: true
+        robot2/standoff_rod_right_rear:
+          Value: true
+        world:
+          Value: true
       Marker Scale: 1
       Name: TF_B1
       Show Arrows: true
       Show Axes: true
       Show Names: false
       Tree:
-        {}
+        world:
+          robot1/odom:
+            robot1/base_link:
+              robot1/chassis:
+                robot1/back_yaw_link:
+                  robot1/back_roll_link:
+                    robot1/back_pitch_link:
+                      {}
+                robot1/cup_holder_tray:
+                  {}
+                robot1/front_yaw_link:
+                  robot1/front_roll_link:
+                    robot1/front_pitch_link:
+                      {}
+                robot1/laser_scan_link:
+                  robot1/laser_scan_frame:
+                    {}
+                robot1/left_wheel:
+                  {}
+                robot1/right_wheel:
+                  {}
+                robot1/standoff_rod_left_front:
+                  {}
+                robot1/standoff_rod_left_rear:
+                  {}
+                robot1/standoff_rod_right_front:
+                  {}
+                robot1/standoff_rod_right_rear:
+                  {}
+          robot2/odom:
+            robot2/base_link:
+              robot2/chassis:
+                robot2/back_yaw_link:
+                  robot2/back_roll_link:
+                    robot2/back_pitch_link:
+                      {}
+                robot2/cup_holder_tray:
+                  {}
+                robot2/front_yaw_link:
+                  robot2/front_roll_link:
+                    robot2/front_pitch_link:
+                      {}
+                robot2/laser_scan_link:
+                  robot2/laser_scan_frame:
+                    {}
+                robot2/left_wheel:
+                  {}
+                robot2/right_wheel:
+                  {}
+                robot2/standoff_rod_left_front:
+                  {}
+                robot2/standoff_rod_left_rear:
+                  {}
+                robot2/standoff_rod_right_front:
+                  {}
+                robot2/standoff_rod_right_rear:
+                  {}
       Update Interval: 0
-      Value: false
+      Value: true
     - Alpha: 1
       Autocompute Intensity Bounds: true
       Autocompute Value Bounds:
@@ -313,24 +442,154 @@ Visualization Manager:
         Inertia: false
         Mass: false
       Name: Barista_B2
-      TF Prefix: ""
+      TF Prefix: /robot2
       Update Interval: 0
       Value: true
       Visual Enabled: true
     - Class: rviz_default_plugins/TF
-      Enabled: false
+      Enabled: true
       Frame Timeout: 15
       Frames:
         All Enabled: false
+        robot1/back_pitch_link:
+          Value: true
+        robot1/back_roll_link:
+          Value: true
+        robot1/back_yaw_link:
+          Value: true
+        robot1/base_link:
+          Value: true
+        robot1/chassis:
+          Value: true
+        robot1/cup_holder_tray:
+          Value: true
+        robot1/front_pitch_link:
+          Value: true
+        robot1/front_roll_link:
+          Value: true
+        robot1/front_yaw_link:
+          Value: true
+        robot1/laser_scan_frame:
+          Value: true
+        robot1/laser_scan_link:
+          Value: true
+        robot1/left_wheel:
+          Value: true
+        robot1/odom:
+          Value: true
+        robot1/right_wheel:
+          Value: true
+        robot1/standoff_rod_left_front:
+          Value: true
+        robot1/standoff_rod_left_rear:
+          Value: true
+        robot1/standoff_rod_right_front:
+          Value: true
+        robot1/standoff_rod_right_rear:
+          Value: true
+        robot2/back_pitch_link:
+          Value: true
+        robot2/back_roll_link:
+          Value: true
+        robot2/back_yaw_link:
+          Value: true
+        robot2/base_link:
+          Value: true
+        robot2/chassis:
+          Value: true
+        robot2/cup_holder_tray:
+          Value: true
+        robot2/front_pitch_link:
+          Value: true
+        robot2/front_roll_link:
+          Value: true
+        robot2/front_yaw_link:
+          Value: true
+        robot2/laser_scan_frame:
+          Value: true
+        robot2/laser_scan_link:
+          Value: true
+        robot2/left_wheel:
+          Value: true
+        robot2/odom:
+          Value: true
+        robot2/right_wheel:
+          Value: true
+        robot2/standoff_rod_left_front:
+          Value: true
+        robot2/standoff_rod_left_rear:
+          Value: true
+        robot2/standoff_rod_right_front:
+          Value: true
+        robot2/standoff_rod_right_rear:
+          Value: true
+        world:
+          Value: true
       Marker Scale: 1
       Name: TF_B2
       Show Arrows: true
       Show Axes: true
       Show Names: false
       Tree:
-        {}
+        world:
+          robot1/odom:
+            robot1/base_link:
+              robot1/chassis:
+                robot1/back_yaw_link:
+                  robot1/back_roll_link:
+                    robot1/back_pitch_link:
+                      {}
+                robot1/cup_holder_tray:
+                  {}
+                robot1/front_yaw_link:
+                  robot1/front_roll_link:
+                    robot1/front_pitch_link:
+                      {}
+                robot1/laser_scan_link:
+                  robot1/laser_scan_frame:
+                    {}
+                robot1/left_wheel:
+                  {}
+                robot1/right_wheel:
+                  {}
+                robot1/standoff_rod_left_front:
+                  {}
+                robot1/standoff_rod_left_rear:
+                  {}
+                robot1/standoff_rod_right_front:
+                  {}
+                robot1/standoff_rod_right_rear:
+                  {}
+          robot2/odom:
+            robot2/base_link:
+              robot2/chassis:
+                robot2/back_yaw_link:
+                  robot2/back_roll_link:
+                    robot2/back_pitch_link:
+                      {}
+                robot2/cup_holder_tray:
+                  {}
+                robot2/front_yaw_link:
+                  robot2/front_roll_link:
+                    robot2/front_pitch_link:
+                      {}
+                robot2/laser_scan_link:
+                  robot2/laser_scan_frame:
+                    {}
+                robot2/left_wheel:
+                  {}
+                robot2/right_wheel:
+                  {}
+                robot2/standoff_rod_left_front:
+                  {}
+                robot2/standoff_rod_left_rear:
+                  {}
+                robot2/standoff_rod_right_front:
+                  {}
+                robot2/standoff_rod_right_rear:
+                  {}
       Update Interval: 0
-      Value: false
+      Value: true
     - Alpha: 1
       Autocompute Intensity Bounds: true
       Autocompute Value Bounds:
@@ -370,16 +629,34 @@ Visualization Manager:
       Frame Timeout: 15
       Frames:
         All Enabled: false
+        robot1/back_pitch_link:
+          Value: true
+        robot1/back_roll_link:
+          Value: true
+        robot1/back_yaw_link:
+          Value: true
         robot1/base_link:
           Value: false
         robot1/chassis:
           Value: false
         robot1/cup_holder_tray:
           Value: false
+        robot1/front_pitch_link:
+          Value: true
+        robot1/front_roll_link:
+          Value: true
+        robot1/front_yaw_link:
+          Value: true
         robot1/laser_scan_frame:
           Value: false
         robot1/laser_scan_link:
           Value: false
+        robot1/left_wheel:
+          Value: true
+        robot1/odom:
+          Value: true
+        robot1/right_wheel:
+          Value: true
         robot1/standoff_rod_left_front:
           Value: false
         robot1/standoff_rod_left_rear:
@@ -388,16 +665,34 @@ Visualization Manager:
           Value: false
         robot1/standoff_rod_right_rear:
           Value: false
+        robot2/back_pitch_link:
+          Value: true
+        robot2/back_roll_link:
+          Value: true
+        robot2/back_yaw_link:
+          Value: true
         robot2/base_link:
           Value: false
         robot2/chassis:
           Value: false
         robot2/cup_holder_tray:
           Value: false
+        robot2/front_pitch_link:
+          Value: true
+        robot2/front_roll_link:
+          Value: true
+        robot2/front_yaw_link:
+          Value: true
         robot2/laser_scan_frame:
           Value: false
         robot2/laser_scan_link:
           Value: false
+        robot2/left_wheel:
+          Value: true
+        robot2/odom:
+          Value: true
+        robot2/right_wheel:
+          Value: true
         robot2/standoff_rod_left_front:
           Value: false
         robot2/standoff_rod_left_rear:
@@ -406,33 +701,77 @@ Visualization Manager:
           Value: false
         robot2/standoff_rod_right_rear:
           Value: false
+        world:
+          Value: true
       Marker Scale: 1
       Name: TF
       Show Arrows: true
       Show Axes: true
       Show Names: true
       Tree:
-        robot1/base_link:
-          robot1/chassis:
-            robot1/cup_holder_tray:
-              {}
-            robot1/laser_scan_link:
-              robot1/laser_scan_frame:
-                {}
-            robot1/standoff_rod_left_front:
-              {}
-            robot1/standoff_rod_left_rear:
-              {}
-            robot1/standoff_rod_right_front:
-              {}
-            robot1/standoff_rod_right_rear:
-              {}
+        world:
+          robot1/odom:
+            robot1/base_link:
+              robot1/chassis:
+                robot1/back_yaw_link:
+                  robot1/back_roll_link:
+                    robot1/back_pitch_link:
+                      {}
+                robot1/cup_holder_tray:
+                  {}
+                robot1/front_yaw_link:
+                  robot1/front_roll_link:
+                    robot1/front_pitch_link:
+                      {}
+                robot1/laser_scan_link:
+                  robot1/laser_scan_frame:
+                    {}
+                robot1/left_wheel:
+                  {}
+                robot1/right_wheel:
+                  {}
+                robot1/standoff_rod_left_front:
+                  {}
+                robot1/standoff_rod_left_rear:
+                  {}
+                robot1/standoff_rod_right_front:
+                  {}
+                robot1/standoff_rod_right_rear:
+                  {}
+          robot2/odom:
+            robot2/base_link:
+              robot2/chassis:
+                robot2/back_yaw_link:
+                  robot2/back_roll_link:
+                    robot2/back_pitch_link:
+                      {}
+                robot2/cup_holder_tray:
+                  {}
+                robot2/front_yaw_link:
+                  robot2/front_roll_link:
+                    robot2/front_pitch_link:
+                      {}
+                robot2/laser_scan_link:
+                  robot2/laser_scan_frame:
+                    {}
+                robot2/left_wheel:
+                  {}
+                robot2/right_wheel:
+                  {}
+                robot2/standoff_rod_left_front:
+                  {}
+                robot2/standoff_rod_left_rear:
+                  {}
+                robot2/standoff_rod_right_front:
+                  {}
+                robot2/standoff_rod_right_rear:
+                  {}
       Update Interval: 0
       Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
-    Fixed Frame: robot1/chassis
+    Fixed Frame: world
     Frame Rate: 30
   Name: root
   Tools:
@@ -490,10 +829,10 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.535398006439209
+      Pitch: 0.3003980815410614
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 0.8253985047340393
+      Yaw: 5.908581256866455
     Saved: ~
 Window Geometry:
   Displays:
