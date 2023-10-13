@@ -37,7 +37,7 @@ def generate_launch_description():
     gazebo = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([os.path.join(
             get_package_share_directory('gazebo_ros'), 'launch'), '/gazebo.launch.py']),
-        launch_arguments={"verbose": "false", 'pause': 'true'}.items(),
+        launch_arguments={"verbose": "false", 'pause': 'false'}.items(),
     )
 
     # Define the robot model files to be used
@@ -51,7 +51,7 @@ def generate_launch_description():
     rsp_robot1 = Node(
         package='robot_state_publisher',
         executable='robot_state_publisher',
-        name='robot_state_publisher',
+        name='robot_b1_state_publisher',
         namespace=robot_name_1,
         parameters=[{'frame_prefix': robot_name_1+'/', 'use_sim_time': use_sim_time,
                      'robot_description': Command(['xacro ', robot_desc_path, ' robot_name:=', robot_name_1])}],
@@ -61,7 +61,7 @@ def generate_launch_description():
     rsp_robot2 = Node(
         package='robot_state_publisher',
         executable='robot_state_publisher',
-        name='robot_state_publisher',
+        name='robot_b2_state_publisher',
         namespace=robot_name_2,
         parameters=[{'frame_prefix': robot_name_2+'/', 'use_sim_time': use_sim_time,
                      'robot_description': Command(['xacro ', robot_desc_path, ' robot_name:=', robot_name_2])}],

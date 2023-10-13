@@ -9,6 +9,10 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(urdf REQUIRED)
 find_package(xacro REQUIRED)
+find_package(tf2_ros REQUIRED)
+find_package(geometry_msgs REQUIRED)
+find_package(nav_msgs REQUIRED)
+
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
@@ -30,6 +34,12 @@ install(
 	xacro
   DESTINATION
     share/${PROJECT_NAME}/
+)
+
+install(PROGRAMS
+  scripts/barista_b1_odom_to_tf_pub.py
+  scripts/barista_b2_odom_to_tf_pub.py
+  DESTINATION lib/${PROJECT_NAME}
 )
 
 ament_package()
