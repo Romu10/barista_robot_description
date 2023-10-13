@@ -86,12 +86,12 @@ def generate_launch_description():
     rviz_config_dir = os.path.join(get_package_share_directory(description_package_name), 'rviz', 'two_barista_config.rviz')
 
     rviz_node = Node(
-            package='rviz2',
-            executable='rviz2',
-            output='screen',
-            name='rviz_node',
-            parameters=[{'use_sim_time': True}],
-            arguments=['-d', rviz_config_dir])
+        package='rviz2',
+        executable='rviz2',
+        output='screen',
+        name='rviz_node',
+        parameters=[{'use_sim_time': True}],
+        arguments=['-d', rviz_config_dir])
 
     b1_static_tf_pub = Node(
         package='tf2_ros',
