@@ -8,6 +8,11 @@
 <xacro:property name="body_length" value="0.155"/>
 <xacro:property name="body_radius" value="0.178"/>
 
+<!-- Caster Wheels Dimensions-->
+<xacro:property name="caster_length" value="0.001"/>
+<xacro:property name="caster_radius" value="0.0045000000000000005"/>
+<xacro:property name="caster_sphere" value="0.0352"/>
+
 <!-- Include Laser -->
 <xacro:property name="include_laser" value="true"/>
 
@@ -173,7 +178,7 @@
     <visual>
     <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
         <geometry>
-            <cylinder length="0.0206" radius="0.0352"/>
+            <cylinder length="${caster_length}" radius="${caster_radius}"/>
         </geometry>
         <material name="blue"/>
     </visual>
@@ -186,7 +191,7 @@
 
     <collision>
         <geometry>
-            <cylinder length="0.0206" radius="0.0352"/>
+            <cylinder length="${caster_length}" radius="${caster_radius}"/>
         </geometry>
     </collision>
   </link>
@@ -208,7 +213,7 @@
     <visual>
         <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
         <geometry>
-            <cylinder length="0.0206" radius="0.0352"/>
+            <cylinder length="${caster_length}" radius="${caster_radius}"/>
         </geometry>
         <material name="red"/>
     </visual>
@@ -221,7 +226,7 @@
 
     <collision>
         <geometry>
-            <cylinder length="0.0206" radius="0.0352"/>
+            <cylinder length="${caster_length}" radius="${caster_radius}"/>
         </geometry>
     </collision>
   </link>
@@ -244,7 +249,7 @@
     <visual>
         <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
         <geometry>
-            <sphere radius="0.0352"/>
+            <sphere radius="${caster_sphere}"/>
         </geometry>
         <material name="green_dark"/>
     </visual>
@@ -284,7 +289,7 @@
     <visual>
         <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
         <geometry>
-          <cylinder length="0.0206" radius="0.0352"/>
+          <cylinder length="${caster_length}" radius="${caster_radius}"/>
         </geometry>
         <material name="blue"/>
       </visual>
@@ -297,7 +302,7 @@
 
     <collision>
         <geometry>
-            <cylinder length="0.0206" radius="0.0352"/>
+            <cylinder length="${caster_length}" radius="${caster_radius}"/>
         </geometry>
         </collision>
   </link>
@@ -319,7 +324,7 @@
     <visual>
         <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
         <geometry>
-          <cylinder length="0.0206" radius="0.0352"/>
+          <cylinder length="${caster_length}" radius="${caster_radius}"/>
         </geometry>
         <material name="red"/>
     </visual>
@@ -332,7 +337,7 @@
 
     <collision>
         <geometry>
-            <cylinder length="0.0206" radius="0.0352"/>
+            <cylinder length="${caster_length}" radius="${caster_radius}"/>
         </geometry>
     </collision>
 
@@ -356,7 +361,7 @@
     <visual>
         <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
         <geometry>
-            <sphere radius="0.0352"/>
+            <sphere radius="${caster_sphere}"/>
         </geometry>
         <material name="green_light"/>
     </visual>
@@ -426,6 +431,7 @@
       <joint_name>back_roll_joint</joint_name>
       <joint_name>front_pitch_joint</joint_name>
       <joint_name>back_pitch_joint</joint_name>
+      <joint_name>base_link_joint</joint_name>
       
     </plugin>
   </gazebo>
